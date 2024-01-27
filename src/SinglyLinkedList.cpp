@@ -5,9 +5,11 @@
 #include "../include/SinglyLinkedList.h"
 #include <iostream>
 
+
 void SinglyLinkedList::insert(int data) {
 
-    Node * newNode = new Node(data);
+    node* newNode = new node;
+    newNode->data = data;
 
     if (head == nullptr)
     {
@@ -15,7 +17,7 @@ void SinglyLinkedList::insert(int data) {
     }
     else
     {
-        Node* temp = head;
+        node* temp = head;
 
         while (temp->next != nullptr)
         {
@@ -35,8 +37,8 @@ void SinglyLinkedList::deleteNode(int data) {
     }
     else
     {
-        Node* temp = head;
-        Node* prev = nullptr;
+        node* temp = head;
+        node* prev = nullptr;
         while (temp != nullptr)
         {
             if (temp->data == data)
@@ -48,22 +50,26 @@ void SinglyLinkedList::deleteNode(int data) {
             prev = temp;
             temp = temp->next;
         }
-
     }
 }
 
 void SinglyLinkedList::printList() {
-    Node* temp = head;
+    node* temp = head;
 
-    while (temp != nullptr)
+    printf("=========== SINGLY LINKED LIST ===========\n");
+
+    while (temp->next != nullptr)
     {
-        std::cout << temp->data << std::endl;
+        printf("%d -> ", temp->data);
         temp = temp->next;
     }
+    printf("%d\n", temp->data);
+    printf("=========== END SINGLY LINKED LIST ===========");
+
 }
 
 void SinglyLinkedList::removeFromFront() {
-    Node* temp = head;
+    node* temp = head;
     head = head->next;
     delete temp;
 }
@@ -80,7 +86,7 @@ void SinglyLinkedList::removeFromBack() {
         return;
 
     }
-    Node* current = head;
+    node* current = head;
 
     while (current->next->next != nullptr)
     {

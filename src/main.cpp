@@ -2,8 +2,6 @@
 #include "../include/SinglyLinkedList.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-
     SinglyLinkedList list;
     list.insert(1);
     list.insert(3);
@@ -11,9 +9,9 @@ int main() {
     list.insert(67);
     list.deleteNode(13);
 //    list.removeFromFront();
-    list.removeFromBack();
-    list.removeFromBack();
-    list.removeFromBack();
+//    list.removeFromBack();
+//    list.removeFromBack();
+//    list.removeFromBack();
     list.removeFromBack();
     list.printList();
 

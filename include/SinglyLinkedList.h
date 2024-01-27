@@ -5,12 +5,16 @@
 #ifndef DSA_SINGLYLINKEDLIST_H
 #define DSA_SINGLYLINKEDLIST_H
 
-#include "Node.h"
 
+
+struct node {
+    int data;
+    node* next;
+};
 
 
 class SinglyLinkedList {
-    Node* head;
+    node* head;
 
 public:
 

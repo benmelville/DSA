@@ -13,7 +13,6 @@ include_directories(${INCLUDE_DIR})
 # List your source files explicitly
 set(SOURCE_FILES
         ${SOURCE_DIR}/main.cpp
-        ${SOURCE_DIR}/Node.cpp
         ${SOURCE_DIR}/SinglyLinkedList.cpp
         # Add more source files as needed
         )
