@@ -7,13 +7,16 @@
 
 
 
-struct node {
-    int data;
-    node* next;
-};
+
 
 
 class SinglyLinkedList {
+
+    struct node {
+        int data;
+        node* next;
+    };
+
     node* head;
 
 public:
@@ -22,15 +25,17 @@ public:
         head = nullptr;
     }
 
-    void insert(int);
-
-    void printList();
+    void insert(int data);
 
     void deleteNode(int);
 
     void removeFromFront();
 
     void removeFromBack();
+
+    void printList();
+
+    void printHead();
 };
 
 

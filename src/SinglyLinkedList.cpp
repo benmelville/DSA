@@ -53,21 +53,6 @@ void SinglyLinkedList::deleteNode(int data) {
     }
 }
 
-void SinglyLinkedList::printList() {
-    node* temp = head;
-
-    printf("=========== SINGLY LINKED LIST ===========\n");
-
-    while (temp->next != nullptr)
-    {
-        printf("%d -> ", temp->data);
-        temp = temp->next;
-    }
-    printf("%d\n", temp->data);
-    printf("=========== END SINGLY LINKED LIST ===========");
-
-}
-
 void SinglyLinkedList::removeFromFront() {
     node* temp = head;
     head = head->next;
@@ -94,6 +79,23 @@ void SinglyLinkedList::removeFromBack() {
     }
     delete current->next;
     current->next = nullptr;
+}
+
+void SinglyLinkedList::printList() {
+    node* temp = head;
+
+
+    while (temp->next != nullptr)
+    {
+        printf("%d -> ", temp->data);
+        temp = temp->next;
+    }
+    printf("%d\n", temp->data);
+
+}
+
+void SinglyLinkedList::printHead() {
+    printf("HEAD: %d\n", head->data);
 }
 
 

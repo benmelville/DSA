@@ -6,14 +6,37 @@
 #define DSA_DOUBLYLINKEDLIST_H
 
 
-struct node {
-    int data;
-    node* next;
-    node* prev;
-};
+
 
 class DoublyLinkedList {
 
+    struct node {
+        int data;
+        node* next;
+        node* prev;
+    };
+
+    node* head;
+    node* tail;
+
+public:
+
+    DoublyLinkedList() {
+        head = nullptr;
+        tail = nullptr;
+    }
+
+    void addToFront(int data);
+
+    void addToBack(int data);
+
+    void removeFromBack();
+
+    void printList();
+
+    void printHead();
+
+    void printTail();
 };
 
 

@@ -14,6 +14,7 @@ include_directories(${INCLUDE_DIR})
 set(SOURCE_FILES
         ${SOURCE_DIR}/main.cpp
         ${SOURCE_DIR}/SinglyLinkedList.cpp
+        ${SOURCE_DIR}/DoublyLinkedList.cpp
         # Add more source files as needed
         )
 
