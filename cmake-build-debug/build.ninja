@@ -67,6 +67,20 @@ build CMakeFiles/dsa.dir/src/DoublyLinkedList.cpp.o: CXX_COMPILER__dsa_Debug /Us
   OBJECT_DIR = CMakeFiles/dsa.dir
   OBJECT_FILE_DIR = CMakeFiles/dsa.dir/src
 
+build CMakeFiles/dsa.dir/src/Stack.cpp.o: CXX_COMPILER__dsa_Debug /Users/benjaminmelville/Desktop/school/dsa/src/Stack.cpp || cmake_object_order_depends_target_dsa
+  DEP_FILE = CMakeFiles/dsa.dir/src/Stack.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -std=gnu++20
+  INCLUDES = -I/Users/benjaminmelville/Desktop/school/dsa/include
+  OBJECT_DIR = CMakeFiles/dsa.dir
+  OBJECT_FILE_DIR = CMakeFiles/dsa.dir/src
+
+build CMakeFiles/dsa.dir/src/Queue.cpp.o: CXX_COMPILER__dsa_Debug /Users/benjaminmelville/Desktop/school/dsa/src/Queue.cpp || cmake_object_order_depends_target_dsa
+  DEP_FILE = CMakeFiles/dsa.dir/src/Queue.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -std=gnu++20
+  INCLUDES = -I/Users/benjaminmelville/Desktop/school/dsa/include
+  OBJECT_DIR = CMakeFiles/dsa.dir
+  OBJECT_FILE_DIR = CMakeFiles/dsa.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target dsa
@@ -75,7 +89,7 @@ build CMakeFiles/dsa.dir/src/DoublyLinkedList.cpp.o: CXX_COMPILER__dsa_Debug /Us
 #############################################
 # Link the executable dsa
 
-build dsa: CXX_EXECUTABLE_LINKER__dsa_Debug CMakeFiles/dsa.dir/src/main.cpp.o CMakeFiles/dsa.dir/src/SinglyLinkedList.cpp.o CMakeFiles/dsa.dir/src/DoublyLinkedList.cpp.o
+build dsa: CXX_EXECUTABLE_LINKER__dsa_Debug CMakeFiles/dsa.dir/src/main.cpp.o CMakeFiles/dsa.dir/src/SinglyLinkedList.cpp.o CMakeFiles/dsa.dir/src/DoublyLinkedList.cpp.o CMakeFiles/dsa.dir/src/Stack.cpp.o CMakeFiles/dsa.dir/src/Queue.cpp.o
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5
   OBJECT_DIR = CMakeFiles/dsa.dir
   POST_BUILD = :

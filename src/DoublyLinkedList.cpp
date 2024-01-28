@@ -23,7 +23,10 @@ void DoublyLinkedList::addToBack(int data) {
 
 void DoublyLinkedList::addToFront(int data) {
 
-    node* newNode = new node {data, nullptr, nullptr};
+    node* newNode = new node;
+    newNode->data = data;
+    newNode->next = nullptr;
+    newNode->prev = nullptr;
 
     if (head == nullptr)
     {
